@@ -17,10 +17,6 @@ spec:
       - name: bind9
         image: ubuntu/bind9:edge
         env:
-        - name: DOCKER_LOGS
-          value: 1
-        - name: ALLOW_QUERY
-          value: any
         ports:
         - containerPort: 53
           protocol: TCP
