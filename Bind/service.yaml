@@ -11,7 +11,6 @@ spec:
     app: bind9
   ports:
   - protocol: TCP
-    nodePort: 32400
     port: 5353
     targetPort: 53
     name: bind9-tcp
