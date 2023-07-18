@@ -9,10 +9,11 @@ spec:
   ports:
   - name: web-app-port
     port: 3000
+    nodePort: 32200
     protocol: TCP
     targetPort: 3000
   selector:
-    run: web-app
+    app: web-app
   type: NodePort
 status:
   loadBalancer: {}
